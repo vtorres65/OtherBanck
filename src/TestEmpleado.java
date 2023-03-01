@@ -5,6 +5,7 @@ public class TestEmpleado {
         diego.setNombre("Diego");
         diego.setIdentificacion("123456");
         diego.setSalario(1000.0);
+        diego.setTipo(0);
 
         System.out.println(diego.getSalario());
         System.out.println(diego.getBonificacion());

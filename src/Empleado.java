@@ -3,6 +3,7 @@ public class Empleado {
     private String nombre;
     private String identificacion;
     private double salario;
+    private int tipo;
 
     public Empleado() {
     }
@@ -31,7 +32,14 @@ public class Empleado {
         this.salario = salario;
     }
 
-    public double getBonificacion(){
+    public double getBonificacion() {
         return this.salario * 0.1;
+    }
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 }
