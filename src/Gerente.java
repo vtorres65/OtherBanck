@@ -23,6 +23,6 @@ public class Gerente extends Empleado{
         }
     }
     public double getBonificacion(){
-        return super.getSalario() +super.getBonificacion();
+        return super.getSalario() + super.getSalario() * 0.05;
     }
 }

@@ -1,4 +1,4 @@
-public class Empleado {
+public abstract class Empleado {
 
     private String nombre;
     private String identificacion;
@@ -32,9 +32,7 @@ public class Empleado {
         this.salario = salario;
     }
 
-    public double getBonificacion() {
-        return this.salario * 0.1;
-    }
+    public abstract double getBonificacion();
     public int getTipo() {
         return tipo;
     }
