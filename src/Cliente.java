@@ -1,4 +1,4 @@
-public class Cliente {
+public class Cliente extends Autenticable{
 
     private String nombre;
     private String documento;

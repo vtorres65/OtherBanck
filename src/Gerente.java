@@ -1,28 +1,19 @@
-public class Gerente extends Empleado{
+public class Gerente extends Autenticable{
 
-    private String clave;
-    private int contraseña;
-
-    public void setClave(String clave){
-        this.clave = clave;
+    // Sobre-escritura de metodo
+    public double getBonificacion() {
+        System.out.println("EJECUTANDO DESDE GERENTE");
+        return 2000;
     }
 
-    public void setContraseña(int contraseña) {
-        this.contraseña = contraseña;
+    @Override
+    public void setClave(String clave) {
+        // TODO Auto-generated method stub
+
     }
 
-    public boolean iniciarSesion(String clave){
-        return clave == "AluraCursosOnLine";
-    }
-
-    public boolean autenticar(int contraseña) {
-        if (this.contraseña == contraseña) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    public double getBonificacion(){
-        return super.getSalario() + super.getSalario() * 0.05;
+    public boolean iniciarSesion(String clave) {
+        // TODO Auto-generated method stub
+        return false;
     }
 }
