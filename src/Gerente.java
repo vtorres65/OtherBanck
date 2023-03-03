@@ -1,4 +1,4 @@
-public class Gerente extends Autenticable{
+public class Gerente extends Empleado implements Autenticable{
 
     // Sobre-escritura de metodo
     public double getBonificacion() {
@@ -8,12 +8,10 @@ public class Gerente extends Autenticable{
 
     @Override
     public void setClave(String clave) {
-        // TODO Auto-generated method stub
 
     }
 
     public boolean iniciarSesion(String clave) {
-        // TODO Auto-generated method stub
         return false;
     }
 }

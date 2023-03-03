@@ -1,11 +1,7 @@
-public abstract interface Autenticable extends Empleado{
+public interface Autenticable{
 
-    private String clave;
+    public void setClave(String clave);
 
-    public void setClave(String clave){
-        this.clave = clave;
-    }
-
-    public abstract boolean iniciarSesion(String clave);
+    public boolean iniciarSesion(String clave);
 
 }
